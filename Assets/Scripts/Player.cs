@@ -1,4 +1,5 @@
-﻿using UnityEditorInternal.Profiling.Memory.Experimental;
+﻿using System.Collections;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,6 +9,9 @@ public class Player : MonoBehaviour
     [SerializeField] float padding = 1f;
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
+    [SerializeField] float projectileFiringPeriod = 0.1f;
+
+    private Coroutine firingCoroutine;
     
     private float xMin;
     private float xMax;
@@ -43,10 +47,17 @@ public class Player : MonoBehaviour
 
     private void Fire()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) firingCoroutine = StartCoroutine(FireContinuously());
+        if (Input.GetButtonUp("Fire1")) StopCoroutine(firingCoroutine);
+    }
+
+    private IEnumerator FireContinuously()
+    {
+        while (true)
         {
             var laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+            yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
     
