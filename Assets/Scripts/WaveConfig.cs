@@ -12,33 +12,22 @@ public class WaveConfig : ScriptableObject
     [SerializeField] private int numberOfEnemies = 5;
     [SerializeField] private float moveSpeed = 2f;
 
-    public GameObject GetEnemyPrefab()
-    {
-        return enemyPrefab;
-    }
+    public GameObject GetEnemyPrefab() { return enemyPrefab; }
 
-    public GameObject GetPathPrefab()
+    public List<Transform> GetWaypoints()
     {
-        return pathPrefab;
-    }
+        var waveWavepoints = new List<Transform>();
 
-    public float GetTimeBetweenSpawns()
-    {
-        return timeBetweenSpawns;
+        foreach (Transform child in pathPrefab.transform)
+        {
+            waveWavepoints.Add(child);
+        }
+        
+        return waveWavepoints;
     }
-
-    public float GetSpawnRandomFactor()
-    {
-        return spawnRandomFactor;
-    }
-
-    public int GetNumberOfEnemies()
-    {
-        return numberOfEnemies;
-    }
-
-    public float GetMoveSpeed()
-    {
-        return moveSpeed;
-    }
+    
+    public float GetTimeBetweenSpawns() { return timeBetweenSpawns; }
+    public float GetSpawnRandomFactor() { return spawnRandomFactor; }
+    public int GetNumberOfEnemies() { return numberOfEnemies; }
+    public float GetMoveSpeed() { return moveSpeed; }
 }
