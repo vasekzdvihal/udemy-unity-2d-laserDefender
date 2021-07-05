@@ -461,15 +461,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2349116585716173716, guid: 5aab3484457c9234b8da76792780c69c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9561039
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2349116585716173716, guid: 5aab3484457c9234b8da76792780c69c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6024325
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2349116585716173716, guid: 5aab3484457c9234b8da76792780c69c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.14753
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2349116585716173716, guid: 5aab3484457c9234b8da76792780c69c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -533,11 +533,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6163636206271254484, guid: f6309000215e5414287704a19467a5ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.46
       objectReference: {fileID: 0}
     - target: {fileID: 6163636206271254484, guid: f6309000215e5414287704a19467a5ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 6163636206271254484, guid: f6309000215e5414287704a19467a5ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -602,6 +602,7 @@ MonoBehaviour:
   - {fileID: 2910330552137262870}
   - {fileID: 2910330552137262869}
   - {fileID: 2910330552137262868}
+  moveSpeed: 2
 --- !u!1001 &7576137999455871267
 PrefabInstance:
   m_ObjectHideFlags: 0
