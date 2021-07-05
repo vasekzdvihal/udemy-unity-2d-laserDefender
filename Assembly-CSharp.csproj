@@ -50,8 +50,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Shredder.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\EnemyPathing.cs" />
      <None Include="Assets\Z. Kenney Assets\Spritesheet\spaceShooter2_spritesheet.xml" />
      <None Include="Assets\_paceshooter\Spritesheet\sheet.xml" />
      <None Include="Assets\Z. Kenney Assets\Spritesheet\spaceShooter2_spritesheet_2X.xml" />
