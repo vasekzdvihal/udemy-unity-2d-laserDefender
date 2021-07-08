@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\Shredder.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\DamageDealer.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <None Include="Assets\Z. Kenney Assets\Spritesheet\spaceShooter2_spritesheet.xml" />
      <None Include="Assets\_paceshooter\Spritesheet\sheet.xml" />
      <None Include="Assets\Z. Kenney Assets\Spritesheet\spaceShooter2_spritesheet_2X.xml" />
