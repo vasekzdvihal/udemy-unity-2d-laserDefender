@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3878754978091661719}
   - component: {fileID: 2757973794610574698}
   - component: {fileID: -514925859332604576}
+  - component: {fileID: 1030448443275748951}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4728517680084239802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5612838, y: 5.163039, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.5576, y: 5.163039, z: 0}
+  m_LocalScale: {x: 1.0043, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,3 +96,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0928d20cbff9484f8d8d320f8b898ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1030448443275748951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728517680084239802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a4c0f27e1535245be70250a1bedc56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shootCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  laserPrefab: {fileID: 8475080083546929805, guid: 79f90facc1c17f44b8484eebe99f38b5, type: 3}
+  projectileSpeed: 10

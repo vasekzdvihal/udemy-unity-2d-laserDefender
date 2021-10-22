@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -63,10 +62,11 @@ public class Player : MonoBehaviour
     
     private void SetUpMoveBoundaries()
     {
-        Camera gameCamera = Camera.main;
+        var gameCamera = Camera.main;
+        if (gameCamera is null) return;
+        
         xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
-
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
     }
