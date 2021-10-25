@@ -115,7 +115,7 @@ MonoBehaviour:
   maxTimeBetweenShots: 10
   laserPrefab: {fileID: 8475080083546929805, guid: 79f90facc1c17f44b8484eebe99f38b5, type: 3}
   projectileSpeed: 12
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 5085917100958119245, guid: 0ff071362a2ff8c4e997b4f439b8110a, type: 3}
   fireSound: {fileID: 8300000, guid: 0cde3f111234fee4485886c06c670525, type: 3}
   fireVolume: 0.4
   deathSound: {fileID: 8300000, guid: 91360ac806ba10d49b785a39928c2eb5, type: 3}
