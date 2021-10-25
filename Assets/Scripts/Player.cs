@@ -13,6 +13,12 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
+    
+    [Header("Sounds")]
+    [SerializeField] private AudioClip fireSound;
+    [SerializeField][Range(0,1)] private float fireVolume = 0.7f;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField][Range(0,1)] private float deathVolume = 0.7f;
 
     private Coroutine firingCoroutine;
     
@@ -60,6 +66,7 @@ public class Player : MonoBehaviour
         {
             var laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+            AudioSource.PlayClipAtPoint(fireSound, Camera.main.transform.position, fireVolume);
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
@@ -88,7 +95,13 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            this.Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathVolume);
     }
 }
