@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8899371821745304229}
   - component: {fileID: 2158640616007609286}
   m_Layer: 0
-  m_Name: Explossion Particles 1
+  m_Name: Explosion Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,10 +225,10 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0.27363944, b: 0.99215686, a: 1}
+        key0: {r: 0.99215686, g: 0, b: 0.0570631, a: 1}
         key1: {r: 0, g: 0, b: 0, a: 1}
-        key2: {r: 0.62352943, g: 0.06274509, b: 0.56821716, a: 0}
-        key3: {r: 0, g: 0.55107707, b: 0.6698113, a: 0}
+        key2: {r: 1, g: 0.7877358, b: 0.97921884, a: 0}
+        key3: {r: 0.3398744, g: 0, b: 0.4433962, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}

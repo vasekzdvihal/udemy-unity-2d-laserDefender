@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe0da6161d9f6346b5c3d84c94c8afb, type: 3}
-  m_Name: Wave 3
+  m_Name: Green_X_Quick
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4728517680084239802, guid: e7dae23a1c34a5b42afc0b562331c8e2, type: 3}
-  pathPrefab: {fileID: 7307472514757482559, guid: 762eebb613a974a428f725d198709549, type: 3}
-  timeBetweenSpawns: 0.5
+  enemyPrefab: {fileID: 4728517680084239802, guid: f0b2071b985e1f54f9915ae0c417ded2, type: 3}
+  pathPrefab: {fileID: 7307472514757482559, guid: 775c0c7e8137e1042924aa44fbf7cd9f, type: 3}
+  timeBetweenSpawns: 0.7
   spawnRandomFactor: 0.3
-  numberOfEnemies: 6
-  moveSpeed: 2
+  numberOfEnemies: 10
+  moveSpeed: 10
